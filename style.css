@@ -12,6 +12,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    display: flex;
 }
 .bg-dark-overlay{
     position: absolute;
@@ -64,4 +65,68 @@
 .link_button:hover{
     background-color: aqua;
     color: black;
+}
+
+.page_containt{
+    margin-left: 200px;
+    width: 50%;
+    z-index: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 30px;
+}
+.page_containt h1{
+    font-size: 70px;
+}
+.page_containt h2{
+    font-size: 30px;
+}
+.page_containt h3{
+    font-size: 30px;
+}
+.book_btn{
+    width: 150px;
+    color: black;
+    font-size: 20px;
+    background-color: rgba(127, 255, 212, 0.896);
+}
+
+.header_button_box{
+    height:80px;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    bottom: 80px;
+    background-color: #333333;
+}
+.buttom_bar {
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 25px;
+   padding: 30px;
+}
+
+.buttom_bar li {
+    color: white;
+    list-style: none;
+}
+
+.small_bike_logo{
+    font-size: 5px;
+}
+.white_buttom_bar{
+    height: 80px;
+    width: 100%;
+    border: 2px solid white;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
 }
