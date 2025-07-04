@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header_page{ 
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.bg-dark-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(0, 0, 0) 0%,rgba(0, 0, 0, 0.222) 100%);
+    z-index: 2;
+
+}
+
+.nav_bar{
+    height: 100px;
+    width:100%;
+    position: absolute;
+    z-index: 2;
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bike_logo{
+    background-size: 100%;
+   
+}
+
+.nav_link_items{
+    gap: 30px;
+    display: flex;
+    
+    
+}
+.nav_link_items a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav_link_items li {
+    list-style: none;
+}
+
+.link_button{
+    padding: 15px;
+    
+    background-color: dodgerblue;
+    border-radius: 30px;
+}
+.link_button:hover{
+    background-color: aqua;
+    color: black;
+}
