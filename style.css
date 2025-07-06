@@ -203,7 +203,7 @@ body,html{
 .third_page{
     /* height: 800px; */
     background-color: #f7f7f7;
-    width: 80%;
+    width: 90%;
    display: grid;
    grid-template-columns: repeat(2, [col-start] minmax(400px, 1fr) [col-end]);
    margin: auto;
@@ -290,16 +290,20 @@ body,html{
 
 }
 
-
+.page_03{
+    margin-top: 90px;
+}
 .small_containt-box_bikes{
     margin-top: 80px;
     display: flex;
-    justify-content: center;
-    height: 465px;
+    flex-direction: column;
+    align-items: center;
+    height: 475px;
     width: 468px;
+    gap: 100px;
     background-color: #f4f4f4;
+    box-shadow: 0 30px 18px -36px rgb(0 0 0);
     border-radius: 4px;
-    box-shadow: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .box_img_1{
     height: 265px;
@@ -307,19 +311,80 @@ body,html{
     background-size: cover;
     background-position: center;
     background-image: url(./product-2.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.box_img_1 h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    font-size: 25px;
 }
 .box_img_2{
     height: 265px;
     width: 415px;
     background-size: cover;
     background-position: center;
-    border: 2px solid black;
     background-image: url(./f1.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
 }
+.box_img_2 h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    font-size: 25px;
+}
+
 .box_img_3{
     height: 265px;
     width: 415px;
     background-size: cover;
     background-position: center;
-    background-image: url(./product-2.jpg);
+    background-image: url(./f2.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.box_img_3 h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    font-size: 25px;
+}
+
+.name_email{
+display: flex;
+gap: 30px;
+}
+.name_email input{
+    width: 600px;
+    height: 60px;
+    padding: 20px;
+}
+
+.subject_mesg{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.subject_mesg input{
+    width: 1235px;
+    height: 60px;
+    padding: 20px;
+}
+.type_02{
+    text-align: center;
+    height: 100px;
+}
+.Message{
+    width: 200px;
 }
