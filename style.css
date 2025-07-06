@@ -14,11 +14,14 @@ body,html{
     width: 100vw;
     height: 100vh;
     background-image: url(./background.jpg);
-    /* background-image: url(./background\ _02.jpg); */
+    background-image: url(./background\ _02.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
     display: flex;
+}
+#header_pages{
+    transition: background-image 1s ease-in-out;
 }
 .bg-dark-overlay{
     position: absolute;

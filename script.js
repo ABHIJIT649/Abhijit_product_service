@@ -1,6 +1,28 @@
-const bgImg = document.querySelectorAll(".header_page")
-for (let i = 0; i < bgImg.length; i++) {
- 
-    
-    
+
+
+const images = [
+    'url("background.jpg")',
+    'url("gallery-5.jpg")',
+    'url("gallery-4.jpg")'
+
+  ];
+
+let index = 0;
+const slider = document.getElementById("header_pages");
+
+function changeBackground() {
+  slider.style.backgroundImage = images[index];
+  index = (index + 1) % images.length; 
 }
+
+
+changeBackground();
+
+// Change background per 3sec
+setInterval(changeBackground, 3000);
+
+
+//scrollling logo
+
+const logo = document.getElementById('logo');
+  let posX = window.innerWidth;
