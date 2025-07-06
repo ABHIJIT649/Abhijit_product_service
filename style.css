@@ -14,6 +14,7 @@ body,html{
     width: 100vw;
     height: 100vh;
     background-image: url(./background.jpg);
+    /* background-image: url(./background\ _02.jpg); */
     background-position: center;
     background-size: cover;
     position: relative;
@@ -400,7 +401,6 @@ gap: 30px;
     display: flex;
     justify-content: center;
     top: 60px;
-    /* align-items: center;   */
     gap: 10px;  
     background-image: url(./background\ _02.jpg);
     background-position: center;
@@ -419,9 +419,13 @@ gap: 30px;
     color: #ffffff;
     z-index: 9;
     margin-top: 60px;
-    height: 400px;
+    height: 350px;
     width: 400px;
     padding: 20px;
+}
+.footer_box-right p{
+    line-height: unset !important;
+    margin-top: 2px !important;
 }
 .footer_box p{
     margin-top: 30px;
@@ -447,4 +451,49 @@ gap: 30px;
 .footer_box ul li {
     margin-bottom: 25px;
 
+}
+.inner_box{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.second_footer_box{
+    left: 146px;
+    bottom: 200px;
+    position: absolute;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    color: white;
+    z-index: 9;
+}
+.second_footer_box input{
+    padding: 10px;
+    margin-left: 20px;
+    width: 300px;
+    height: 60px;
+    background-color: #f7f7f7;
+}
+.teli_button{
+    background-color: #09b294;
+    width: 200px;
+    height: 60px;
+}
+
+.last_footer{
+    left: 59px;
+    bottom: 50px;
+    position: absolute;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    z-index: 9;
+}
+
+.last_footer a{
+    color: #ffffff;
+    text-decoration: none;
 }
