@@ -19,10 +19,9 @@ body,html{
     background-size: cover;
     position: relative;
     display: flex;
-}
-#header_pages{
     transition: background-image 1s ease-in-out;
 }
+
 .bg-dark-overlay{
     position: absolute;
     width: 100%;
