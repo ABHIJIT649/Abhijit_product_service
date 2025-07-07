@@ -3,7 +3,10 @@
 const images = [
     'url("background.jpg")',
     'url("gallery-5.jpg")',
-    'url("gallery-4.jpg")'
+    'url("gallery-4.jpg")',
+    'url("gallery_6.jpg")',
+    'url("gallery-7.jpg")'
+
 
   ];
 
