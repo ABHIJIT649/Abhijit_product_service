@@ -19,7 +19,7 @@ body,html{
     background-size: cover;
     position: relative;
     display: flex;
-    transition: background-image 1s ease-in-out;
+    transition: background-image 1.5s ease-in-out;
 }
 
 .bg-dark-overlay{
@@ -66,7 +66,6 @@ body,html{
 
 .link_button{
     padding: 15px;
-    
     background-color: dodgerblue;
     border-radius: 30px;
 }
@@ -276,14 +275,6 @@ body,html{
 }
 .book_sec{
     width: 200px;
-}
-
-@media (max-width:768px) {
-    .big_box_containt{
-        grid-template-columns:repeat(2, [col-start] minmax(250px, 1fr) [col-end]);
-        
-   }
-    
 }
 
 .big_box_containt_page3{
@@ -498,4 +489,276 @@ gap: 30px;
 .last_footer a{
     color: #ffffff;
     text-decoration: none;
+}
+
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Large tablets and small laptops */
+@media screen and (max-width: 1024px) {
+    .page_containt {
+        margin-left: 100px;
+        width: 60%;
+    }
+    
+    .page_containt h1 {
+        font-size: 60px;
+    }
+    
+    .containt_page h1 {
+        font-size: 45px;
+    }
+    
+    .box_three_page_01 h1, .box_three_page_04 h1 {
+        font-size: 40px;
+    }
+    
+    .third_page {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .nav_link_items {
+        gap: 20px;
+    }
+    
+    .nav_link_items a {
+        font-size: 18px;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    .nav_bar {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .nav_link_items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .page_containt {
+        margin-left: 50px;
+        width: 80%;
+        text-align: center;
+    }
+    
+    .page_containt h1 {
+        font-size: 50px;
+    }
+    
+    .page_containt h2, .page_containt h3 {
+        font-size: 25px;
+    }
+    
+    .containt_page {
+        margin-top: 120px;
+    }
+    
+    .containt_page h1 {
+        font-size: 40px;
+    }
+    
+    .containt_page p {
+        font-size: 20px;
+    }
+    
+    .big_box_containt {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        width: 95%;
+    }
+    
+    .third_page {
+        width: 95%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 1rem;
+    }
+    
+    .box_three_page_01 h1, .box_three_page_04 h1 {
+        font-size: 35px;
+    }
+    
+    .big_box_containt_page3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .small_containt-box_bikes {
+        width: 90%;
+        max-width: 400px;
+    }
+    
+    .footer_part {
+        flex-direction: column;
+        height: auto;
+        min-height: 700px;
+    }
+    
+    .footer_box {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .second_footer_box {
+        position: static;
+        width: 90%;
+        margin: 2rem auto;
+        justify-content: center;
+    }
+    
+    .last_footer {
+        position: static;
+        width: 90%;
+        margin: 2rem auto;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+    .nav_bar {
+        padding: 0.5rem;
+    }
+    
+    .nav_link_items a {
+        font-size: 16px;
+    }
+    
+    .link_button {
+        padding: 10px;
+    }
+    
+    .page_containt {
+        margin-left: 20px;
+        width: 90%;
+    }
+    
+    .page_containt h1 {
+        font-size: 40px;
+    }
+    
+    .page_containt h2, .page_containt h3 {
+        font-size: 20px;
+    }
+    
+    .containt_page h1 {
+        font-size: 35px;
+    }
+    
+    .containt_page p {
+        font-size: 18px;
+    }
+    
+    .big_box_containt {
+        grid-template-columns: 1fr;
+        width: 95%;
+        gap: 20px;
+    }
+    
+    .third_page {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .box_three_page_01 h1, .box_three_page_04 h1 {
+        font-size: 30px;
+    }
+    
+    .box_three_page_02, .box_three_page_03 {
+        height: 250px;
+    }
+    
+    .buttom_bar {
+        font-size: 18px;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .name_email {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .name_email input {
+        min-width: auto;
+    }
+    
+    .small_containt-box_bikes {
+        width: 95%;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .box_img_1, .box_img_2, .box_img_3 {
+        height: 200px;
+    }
+    
+    .box_img_1 h1, .box_img_2 h1, .box_img_3 h1 {
+        margin-top: 150px;
+        font-size: 20px;
+    }
+    
+    .footer_box {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .footer_box h1 {
+        font-size: 25px;
+    }
+    
+    .footer_box ul {
+        flex-wrap: nowrap;
+        height: auto;
+    }
+    
+    .second_footer_box {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .second_footer_box input {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .teli_button {
+        width: 100%;
+    }
+    
+    .last_footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 320px) {
+    .page_containt h1 {
+        font-size: 32px;
+    }
+    
+    .containt_page h1 {
+        font-size: 28px;
+    }
+    
+    .box_three_page_01 h1, .box_three_page_04 h1 {
+        font-size: 25px;
+    }
+    
+    .nav_link_items a {
+        font-size: 14px;
+    }
+    
+    .buttom_bar {
+        font-size: 16px;
+    }
 }

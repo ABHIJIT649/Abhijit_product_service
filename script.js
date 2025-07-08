@@ -25,7 +25,3 @@ changeBackground();
 setInterval(changeBackground, 3000);
 
 
-//scrollling logo
-
-const logo = document.getElementById('logo');
-  let posX = window.innerWidth;
